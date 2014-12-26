@@ -27,7 +27,7 @@ This will install a local development box on vagrant with the following (among o
 
 ## What Doesn’t this do
 
-This is a redacted version of the cookbook we use, so this will not restore your mySQL/postgres/Mongo from backup for example, will not reindex your full-test search etc…
+This is a redacted version of the cookbook we use, I removed things I felt are too specific for our use-case, so this will not restore your mySQL/postgres/Mongo from backup for example, will not reindex your full-test search etc…
 
 Here’s a mySQL example to give you a sense of how it’s done in the full version we are using
 

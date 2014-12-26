@@ -44,7 +44,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe 'vim'
     chef.add_recipe 'openssh'
     chef.add_recipe 'gogobot-memcache'
-    chef.add_recipe 'development-box'
+    chef.add_recipe 'gogobot-development-box'
     chef.json = {
       :rbenv   => {
         :user_installs => [

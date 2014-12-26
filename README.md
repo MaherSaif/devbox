@@ -2,8 +2,6 @@
 
 # Building a brand new development environment using Chef
 
-## This is NOT Complete yet, come back soon, I am actively working on it
-
 ## What does this do?
 
 This will install a local development box on vagrant with the following (among others)

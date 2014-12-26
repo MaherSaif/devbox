@@ -4,6 +4,29 @@
 
 ## This is NOT Complete yet, come back soon, I am actively working on it
 
+## What does this do?
+
+This will install a local development box on vagrant with the following (among others)
+
+* apt
+* python
+* java
+* openssh
+* rbenv
+* ruby (2.2.0)
+* bundler
+* mysql
+* mongo
+* redis
+* memcached
+* nodejs
+* npm
+* juggernaut
+* git
+* Useful packages like vim/tmux/curl/htop etc...
+* Custom .tmux.conf file to better work with tmux (Custom keybindings as well)
+* Custom .gitignore
+
 ## Prerequisites
 
 * You should have git installed on your machine and configure the SSH key on your github account, it's likely that your project repo is private so this is a crucial step.

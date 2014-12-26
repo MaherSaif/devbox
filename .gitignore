@@ -3,7 +3,12 @@
 
 # Bundler
 bin/*
-.bundle/*
+/bundle
 
 .kitchen/
 .kitchen.local.yml
+/cookbooks
+/tmp
+temp/*
+/.chef
+/.vagrant

@@ -36,16 +36,20 @@ Vagrant.configure("2") do |config|
     chef.add_recipe 'mysql::client'
     chef.add_recipe 'mysql::server'
     chef.add_recipe 'nodejs'
-    chef.add_recipe 'gogobot-redis'
     chef.add_recipe 'git'
-    chef.add_recipe 'gogobot-packages'
-    chef.add_recipe 'gogobot-java'
-    chef.add_recipe 'ulimit'
     chef.add_recipe 'vim'
     chef.add_recipe 'openssh'
+    chef.add_recipe 'ulimit'
+    chef.add_recipe 'gogobot-redis'
+    chef.add_recipe 'gogobot-packages'
+    chef.add_recipe 'gogobot-java'
     chef.add_recipe 'gogobot-memcache'
     chef.add_recipe 'gogobot-development-box'
     chef.json = {
+      :devbox => {
+        :user_home => "/home/vagrant",
+        :project_root => ENV['VAGRANT_PROJECT_DIR']
+      },
       :rbenv   => {
         :user_installs => [
           {

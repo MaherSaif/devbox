@@ -8,13 +8,21 @@
 * Configure these environment variables on your `ZSH` or `bash` profile.
 
 ```shell
-export GIT_REPOSITORY_LOCATION='git@github.com:your_user/your_project.git`
+# Where is your projects git repository?
+export GIT_REPOSITORY_LOCATION='git@github.com:your_user/your_project.git'
+# Where should it be cloned to on your machine
 export PROJECT_DIR='~/Code/your_project'
+# Where should the project be available on the vagrant box
 export VAGRANT_PROJECT_DIR='/home/vagrant/gogobot'
+# Where did you clone this repository to?
 export CHEF_PROJECT_DIR='~/Code/devbox'
+# Where is your hostsfile located?
 export HOSTS_FILE_LOCATION='/private/etc/hosts'
+# Local Network IP for vagrant
 export LOCAL_NETWORK_IP='192.168.99.99'
+# What's the local domain you'd like to use?
 export DOMAIN='local.gogobot.com'
+# Vagrant hostname
 export HOSTNAME='devbox-avitzurel.gogobot.com'
 ```
 

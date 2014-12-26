@@ -2,6 +2,8 @@
 
 # Building a brand new development environment using Chef
 
+## This is NOT Complete yet, come back soon, I am actively working on it
+
 ## Prerequisites
 
 * You should have git installed on your machine and configure the SSH key on your github account, it's likely that your project repo is private so this is a crucial step.

@@ -1,4 +1,1 @@
-devbox
-======
-
-Gogobot development box (Chef + Vagrant)
+![Gogobot Development Box](http://aviioblog.s3.amazonaws.com/gogobot-devbox.png)

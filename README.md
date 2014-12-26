@@ -25,6 +25,19 @@ This will install a local development box on vagrant with the following (among o
 * Custom .tmux.conf file to better work with tmux (Custom keybindings as well)
 * Custom .gitignore
 
+## What Doesn’t this do
+
+This is a redacted version of the cookbook we use, so this will not restore your mySQL/postgres/Mongo from backup for example, will not reindex your full-test search etc…
+
+Here’s a mySQL example to give you a sense of how it’s done in the full version we are using
+
+```ruby
+execute "restore database" do
+  command "mysql -u MYSQL_USERNAME -pPASSWORD DATABASE < /vagrant/database-backup"
+  only_if { ::File.exists?('/vagrant/database-backup') }
+end
+```
+
 ## Prerequisites
 
 * You should have git installed on your machine and configure the SSH key on your github account, it's likely that your project repo is private so this is a crucial step.
@@ -65,6 +78,10 @@ export HOSTNAME='devbox-avitzurel.gogobot.com'
 * Run `ssh-add -k` This will add your private key to the SSH agent for Vagrant
 * Run `vagrant up`
 * PROFIT!
+
+## Questions?
+
+If you have a question/issue, please feel free to open up and issue and discuss
 
 ## Contributing
 
